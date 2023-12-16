@@ -1,3 +1,5 @@
+import { Injectable } from '@nestjs/common';
+@Injectable()
 export class BookService {
   addBook(): string {
     return 'This will add book';
@@ -7,5 +9,8 @@ export class BookService {
   }
   updateBook(): string {
     return 'This will update book';
+  }
+  findBook(): string {
+    return 'This will find books';
   }
 }
